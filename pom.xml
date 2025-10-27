@@ -1,4 +1,3 @@
-<?xml version="1.0"?>
 <!--
    Licensed to the Apache Software Foundation (ASF) under one or more
    contributor license agreements.  See the NOTICE file distributed with
@@ -24,22 +23,18 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>commons-io</groupId>
   <artifactId>commons-io</artifactId>
-  <version>2.11.0</version>
+  <version>2.11.0-lineaje-01</version>
   <name>Apache Commons IO</name>
-
   <inceptionYear>2002</inceptionYear>
   <description>
 The Apache Commons IO library contains utility classes, stream implementations, file filters,
 file comparators, endian transformation classes, and much more.
   </description>
-
   <url>https://commons.apache.org/proper/commons-io/</url>
-
   <issueManagement>
     <system>jira</system>
     <url>https://issues.apache.org/jira/browse/IO</url>
   </issueManagement>
-
   <distributionManagement>
     <site>
       <id>apache.website</id>
@@ -47,20 +42,18 @@ file comparators, endian transformation classes, and much more.
       <url>scm:svn:https://svn.apache.org/repos/infra/websites/production/commons/content/proper/commons-io/</url>
     </site>
   </distributionManagement>
-
   <scm>
-    <connection>scm:git:https://gitbox.apache.org/repos/asf/commons-io.git</connection>
-    <developerConnection>scm:git:https://gitbox.apache.org/repos/asf/commons-io.git</developerConnection>
-    <url>https://gitbox.apache.org/repos/asf?p=commons-io.git</url>
-    <tag>rel/commons-io-2.11.0</tag>
+    <connection>scm:git:commons-io</connection>
+    <developerConnection>scm:git:commons-io</developerConnection>
+    <url>commons-io</url>
+    <tag>2.11.0-lineaje-01</tag>
   </scm>
-
   <developers>
     <developer>
       <name>Scott Sanders</name>
       <id>sanders</id>
       <email>sanders@apache.org</email>
-      <organization />
+      <organization/>
       <roles>
         <role>Java Developer</role>
       </roles>
@@ -70,7 +63,7 @@ file comparators, endian transformation classes, and much more.
       <!-- Note: first name is correctly capitalised above -->
       <id>dion</id>
       <email>dion@apache.org</email>
-      <organization />
+      <organization/>
       <roles>
         <role>Java Developer</role>
       </roles>
@@ -79,7 +72,7 @@ file comparators, endian transformation classes, and much more.
       <name>Nicola Ken Barozzi</name>
       <id>nicolaken</id>
       <email>nicolaken@apache.org</email>
-      <organization />
+      <organization/>
       <roles>
         <role>Java Developer</role>
       </roles>
@@ -88,7 +81,7 @@ file comparators, endian transformation classes, and much more.
       <name>Henri Yandell</name>
       <id>bayard</id>
       <email>bayard@apache.org</email>
-      <organization />
+      <organization/>
       <roles>
         <role>Java Developer</role>
       </roles>
@@ -96,7 +89,7 @@ file comparators, endian transformation classes, and much more.
     <developer>
       <name>Stephen Colebourne</name>
       <id>scolebourne</id>
-      <organization />
+      <organization/>
       <roles>
         <role>Java Developer</role>
       </roles>
@@ -106,7 +99,7 @@ file comparators, endian transformation classes, and much more.
       <name>Jeremias Maerki</name>
       <id>jeremias</id>
       <email>jeremias@apache.org</email>
-      <organization />
+      <organization/>
       <roles>
         <role>Java Developer</role>
       </roles>
@@ -116,7 +109,7 @@ file comparators, endian transformation classes, and much more.
       <name>Matthew Hawthorne</name>
       <id>matth</id>
       <email>matth@apache.org</email>
-      <organization />
+      <organization/>
       <roles>
         <role>Java Developer</role>
       </roles>
@@ -125,7 +118,7 @@ file comparators, endian transformation classes, and much more.
       <name>Martin Cooper</name>
       <id>martinc</id>
       <email>martinc@apache.org</email>
-      <organization />
+      <organization/>
       <roles>
         <role>Java Developer</role>
       </roles>
@@ -134,7 +127,7 @@ file comparators, endian transformation classes, and much more.
       <name>Rob Oxspring</name>
       <id>roxspring</id>
       <email>roxspring@apache.org</email>
-      <organization />
+      <organization/>
       <roles>
         <role>Java Developer</role>
       </roles>
@@ -164,7 +157,7 @@ file comparators, endian transformation classes, and much more.
       <email>ggregory at apache.org</email>
       <url>https://www.garygregory.com</url>
       <organization>The Apache Software Foundation</organization>
-      <organizationUrl>https://www.apache.org/</organizationUrl>      
+      <organizationUrl>https://www.apache.org/</organizationUrl>
       <roles>
         <role>PMC Member</role>
       </roles>
@@ -180,7 +173,6 @@ file comparators, endian transformation classes, and much more.
       <timezone>+1</timezone>
     </developer>
   </developers>
-
   <contributors>
     <contributor>
       <name>Rahul Akolkar</name>
@@ -235,8 +227,11 @@ file comparators, endian transformation classes, and much more.
     <contributor>
       <name>Frank W. Zammetti</name>
     </contributor>
+    <contributor>
+      <name>Lineaje DepFixer</name>
+      <email>221268890+Lineaje-DepFixer@users.noreply.github.com</email>
+    </contributor>
   </contributors>
-
   <dependencyManagement>
     <dependencies>
       <dependency>
@@ -248,7 +243,6 @@ file comparators, endian transformation classes, and much more.
       </dependency>
     </dependencies>
   </dependencyManagement>
-  
   <dependencies>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
@@ -292,7 +286,6 @@ file comparators, endian transformation classes, and much more.
       <scope>test</scope>
     </dependency>
   </dependencies>
-
   <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
@@ -304,8 +297,7 @@ file comparators, endian transformation classes, and much more.
     <commons.release.desc>(requires Java 8)</commons.release.desc>
     <commons.jira.id>IO</commons.jira.id>
     <commons.jira.pid>12310477</commons.jira.pid>
-    <commons.osgi.export>
-        <!-- Explicit list of packages from IO 1.4 -->
+    <commons.osgi.export><!-- Explicit list of packages from IO 1.4 -->
         org.apache.commons.io;
         org.apache.commons.io.comparator;
         org.apache.commons.io.filefilter;
@@ -319,8 +311,7 @@ file comparators, endian transformation classes, and much more.
         org.apache.commons.io.output;
         org.apache.commons.io.*;version=${project.version};-noimport:=true
     </commons.osgi.export>
-    <commons.osgi.import>
-        <!-- IO-734 - Make the sun.* references from BufferedFileChannelInputStream optional -->
+    <commons.osgi.import><!-- IO-734 - Make the sun.* references from BufferedFileChannelInputStream optional -->
         sun.nio.ch;resolution:=optional,
         sun.misc;resolution:=optional,
         *
@@ -333,14 +324,13 @@ file comparators, endian transformation classes, and much more.
     <commons.japicmp.version>0.15.3</commons.japicmp.version>
     <spotbugs.plugin.version>4.2.3</spotbugs.plugin.version>
     <spotbugs.impl.version>4.3.0</spotbugs.impl.version>
-    <jmh.version>1.32</jmh.version>    
+    <jmh.version>1.32</jmh.version>
     <japicmp.skip>false</japicmp.skip>
     <jacoco.skip>${env.JACOCO_SKIP}</jacoco.skip>
     <commons.release.isDistModule>true</commons.release.isDistModule>
-    <commons.releaseManagerName>Gary Gregory</commons.releaseManagerName>    
+    <commons.releaseManagerName>Gary Gregory</commons.releaseManagerName>
     <commons.releaseManagerKey>86fdc7e2a11262cb</commons.releaseManagerKey>
   </properties>
-
   <build>
     <!-- japicmp:cmp needs package to work from a jar -->
     <defaultGoal>clean package apache-rat:check japicmp:cmp checkstyle:check javadoc:javadoc</defaultGoal>
@@ -373,7 +363,7 @@ file comparators, endian transformation classes, and much more.
               <version>8.44</version>
             </dependency>
           </dependencies>
-        </plugin>      
+        </plugin>
       </plugins>
     </pluginManagement>
     <plugins>
@@ -392,7 +382,7 @@ file comparators, endian transformation classes, and much more.
                 <requireMavenVersion>
                   <version>3.0.5</version>
                 </requireMavenVersion>
-              </rules>    
+              </rules>
             </configuration>
           </execution>
         </executions>
@@ -470,7 +460,7 @@ file comparators, endian transformation classes, and much more.
             <groupId>com.github.spotbugs</groupId>
             <artifactId>spotbugs</artifactId>
             <version>${spotbugs.impl.version}</version>
-         </dependency>
+          </dependency>
         </dependencies>
         <configuration>
           <excludeFilterFile>${basedir}/spotbugs-exclude-filter.xml</excludeFilterFile>
@@ -480,9 +470,28 @@ file comparators, endian transformation classes, and much more.
         <groupId>com.github.siom79.japicmp</groupId>
         <artifactId>japicmp-maven-plugin</artifactId>
       </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-gpg-plugin</artifactId>
+        <version>3.2.4</version>
+        <executions>
+          <execution>
+            <id>sign-artifacts</id>
+            <phase>verify</phase>
+            <goals>
+              <goal>sign</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <gpgArguments>
+            <arg>--pinentry-mode</arg>
+            <arg>loopback</arg>
+          </gpgArguments>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
-
   <reporting>
     <plugins>
       <plugin>
@@ -500,7 +509,7 @@ file comparators, endian transformation classes, and much more.
       <plugin>
         <groupId>com.github.siom79.japicmp</groupId>
         <artifactId>japicmp-maven-plugin</artifactId>
-      </plugin>    
+      </plugin>
     </plugins>
   </reporting>
   <profiles>
@@ -527,18 +536,16 @@ file comparators, endian transformation classes, and much more.
                 <configuration>
                   <target>
                     <exec executable="svn">
-                      <arg line="checkout --depth immediates ${commons.scmPubUrl} ${commons.scmPubCheckoutDirectory}" />
+                      <arg line="checkout --depth immediates ${commons.scmPubUrl} ${commons.scmPubCheckoutDirectory}"/>
                     </exec>
-
                     <exec executable="svn">
-                      <arg line="update --set-depth exclude ${commons.scmPubCheckoutDirectory}/javadocs" />
+                      <arg line="update --set-depth exclude ${commons.scmPubCheckoutDirectory}/javadocs"/>
                     </exec>
-
                     <pathconvert pathsep=" " property="dirs">
-                      <dirset dir="${commons.scmPubCheckoutDirectory}" includes="*" />
+                      <dirset dir="${commons.scmPubCheckoutDirectory}" includes="*"/>
                     </pathconvert>
                     <exec executable="svn">
-                      <arg line="update --set-depth infinity ${dirs}" />
+                      <arg line="update --set-depth infinity ${dirs}"/>
                     </exec>
                   </target>
                 </configuration>
